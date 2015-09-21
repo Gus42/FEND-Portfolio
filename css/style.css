@@ -1,0 +1,243 @@
+/* DEFAULT */
+* {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+p {
+	text-transform: initial;
+	text-align: justify;
+	font-size: 12px;
+	padding: 0 5px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 11px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+
+/* COMMON USE */
+._clear {
+	clear: both;
+}
+
+
+/* FLEXBOX LAYOUT */
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 100%;
+}
+
+.box-30 {
+	width: 30%;
+}
+
+.box-70 {
+	width: 70%;
+}
+
+.app {
+	width: 100%;
+}
+
+
+/* HEADER */
+.header {
+	border-bottom: 2px solid #bcbcbc;
+	margin-bottom: 34px !important;
+}
+
+.mobile-bar {
+	font-size: 22px;
+	color: darkgrey;
+}
+
+.fa {
+	padding: 5px;
+}
+
+.hamb_button {
+	float: left;
+}
+
+.hamb_button:focus .mobile-nav {
+	display: block;
+}
+
+.mobile-nav {
+	position: absolute;
+	z-index: 3;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: rgba(248,152,29,0.9);
+	color: #676857;
+	text-align: center;
+	padding: 5px;
+	display: none;
+}
+
+.mobile-li {
+	padding: 8px;
+	border-bottom: 1px solid darkgrey;
+}
+
+.mobile-li:last-of-type {
+	border: 0;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus {
+	float: right;
+}
+
+.logo{
+	padding-left: 20px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.logo-img {
+	position: absolute;
+	top: 50%;
+	height: 70px;
+	margin-top: -35px;
+}
+
+.title {
+	padding-right: 20px;
+	text-align: right;
+	color: #676857;
+}
+
+.title-h1 {
+	margin-bottom: 0;
+}
+
+.title-h3 {
+	margin-top: 0;
+}
+
+.nav-list {
+	display: none;
+	background-color: rgba(200,200,200,0.1);
+	color: #f8981d;
+}
+
+.nav-list-li {
+	float: right;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+.nav-list-li:hover {
+	background-color: rgba(248,152,29,0.1);
+	color: #676857;
+	font-weight: 900;
+}
+
+/* SECTION */
+
+.section-h3 {
+	margin-left: 5px;
+	color: #bcbcbc;
+}
+
+/* NAV APPS */
+.works {
+	color: #bcbcbc;
+}
+
+.showcase {
+	text-align: center;
+	color: #676857;
+}
+
+.app {
+	padding: 10px;
+}
+
+.app:visited {
+	color: #676857;
+}
+
+.app:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.app-img {
+	margin: 0 auto;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 450px) {
+	.app {
+		width: 33.3%;
+	}
+
+	h1 {
+		font-size: 42px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	.mobile-bar {
+		display: none;
+	}
+
+	.nav-list {
+		display: inline;
+	}
+
+	.logo-img {
+		height: 100px;
+		margin-top: -50px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.container {
+		width: 960px;
+		margin: 0 auto;
+	}
+}
